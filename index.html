@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Free Fire</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* Fondo con video de YouTube */
+        .video-background {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-background iframe {
+            width: 100%; height: 100%;
+            pointer-events: none;
+        }
+
+        header {
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            animation: fadeDown 1.5s ease;
+        }
+
+        h1 {
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: glowText 2s ease-in-out infinite alternate;
+        }
+
+        section {
+            background-color: rgba(0,0,0,0.6);
+            margin: 40px auto;
+            padding: 20px;
+            width: 60%;
+            border-radius: 10px;
+            animation: slideUp 2s ease;
+        }
+
+        h2 {
+            animation: fadeIn 2s ease;
+        }
+
+        p {
+            animation: fadeIn 3s ease;
+        }
+
+        img {
+            border: 3px solid #ffcc00;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #ffcc00;
+            cursor: pointer;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px #ffcc00;
+        }
+
+        footer {
+            background-color: rgba(0,0,0,0.7);
+            padding: 10px;
+            margin-top: 30px;
+            animation: fadeIn 4s ease;
+        }
+
+        /* Animaciones */
+        @keyframes fadeDown {
+            from {opacity: 0; transform: translateY(-50px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes slideUp {
+            from {opacity: 0; transform: translateY(50px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes glowText {
+            from {text-shadow: 0 0 10px #ff0050;}
+            to {text-shadow: 0 0 20px #ffcc00;}
+        }
+    </style>
+</head>
+<body>
+    <!-- Fondo con video de YouTube -->
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/ECgJ8UtaDoM?autoplay=1&mute=1&loop=1&playlist=ECgJ8UtaDoM"
+                frameborder="0" allow="autoplay; fullscreen">
+        </iframe>
+    </div>
+
+    <header>
+        <h1>Mi página Free Fire</h1>
+    </header>
+
+    <section>
+        <h2>Sobre mí</h2>
+        <p>Mini influencer de Free Fire. Subo jugadas épicas a TikTok.</p>
+
+        <!-- Solo la imagen es clickeable -->
+        <a href="https://www.tiktok.com/@marquinhoss.ff" target="_blank">
+            <img src="https://www.freefiremania.com.br/images/noticias/free-fire-world-series-2026-calendario-oficial-3.webp" 
+                 alt="Mi foto" width="300">
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 - Mi Página Free Fire</p>
+    </footer>
+</body>
+</html>
